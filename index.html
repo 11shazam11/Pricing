@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Rhodium+Libre&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      background-color: #5B0888;
+
+    }
+    .pricing-container{
+      display: flex;
+      gap: 20px;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    button{
+      background-color: #713ABE;
+      font-size: large;
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Rhodium Libre', serif ;
+      color: #E5CFF7;
+      border-radius: 15%;
+    }
+    div{
+      color: #E5CFF7;
+    }
+    .pricing-plan{
+      background-color: #9D76C1;
+      text-align: center;
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      border: 5px solid #713ABE;
+      border-radius: 10%;
+    }
+    .plan-title{
+      font-size: 3rem;
+      font-family: 'Gemunu Libre', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+      color: ;
+    }
+    .plan-price{
+      font-size: 2rem;
+      color: black;
+      font-family: 'Libre Baskerville', serif;
+    }
+    .plan-features{
+      list-style: none;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+      }
+      .pricing-container{
+        top: 2px;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
